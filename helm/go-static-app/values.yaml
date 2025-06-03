@@ -6,7 +6,7 @@ containerPort: 8080
 
 image:
   repository: ghcr.io/heschmat/devops_eks_portfolio
-  tag: "main-fa07cd9"
+  tag: "main-d3a08db"
   pullPolicy: Always
 
 imagePullSecret: ghcr-secret
