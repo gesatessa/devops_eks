@@ -86,7 +86,7 @@ jobs:
           sudo apt-get install trivy
 
       - name: Scan Docker Image for vulnerabilities
-        run: trivy image --exit-code 1 --severity HIGH,CRITICAL $IMAGE_NAME:$IMAGE_TAG
+        run: trivy image --exit-code 1 --severity HIGH,CRITICAL ${{needs.docker.outputs.image_name}}:${{needs.docker.outputs.image_tag}}
 
   update-helm:
     needs: [docker]
