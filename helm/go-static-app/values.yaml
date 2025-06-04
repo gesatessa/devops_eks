@@ -5,8 +5,8 @@ containerName: go-app-container
 containerPort: 8080
 
 image:
-  repository: ghcr.io/heschmat/devops_eks_portfolio
-  tag: "main-69b8af9"
+  repository: ghcr.io/gesatessa/devops_eks
+  tag: "v1"
   pullPolicy: Always
 
 imagePullSecret: ghcr-secret
